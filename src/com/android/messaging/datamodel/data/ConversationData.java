@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.android.common.contacts.DataUsageStatUpdater;
+//import com.android.common.contacts.DataUsageStatUpdater;
 import com.android.messaging.Factory;
 import com.android.messaging.R;
 import com.android.messaging.datamodel.BoundCursorLoader;
@@ -626,7 +626,7 @@ public class ConversationData extends BindableData {
             }
         }
 
-        if (ContactUtil.hasReadContactsPermission()) {
+        /*if (ContactUtil.hasReadContactsPermission()) {
             SafeAsyncTask.executeOnThreadPool(new Runnable() {
                 @Override
                 public void run() {
@@ -644,7 +644,7 @@ public class ConversationData extends BindableData {
                     }
                 }
             });
-        }
+        }*/
     }
 
     public void downloadMessage(final BindingBase<ConversationData> binding,
